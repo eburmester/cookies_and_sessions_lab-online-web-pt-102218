@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController 
-  skip_before_action
+  skip_before_action :verify_authenticity_token
   
   def index 
   end 
